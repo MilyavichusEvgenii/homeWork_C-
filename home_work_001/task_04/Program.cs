@@ -9,7 +9,8 @@
  int a = Math.Abs(number);
 
  string numbStr = "";
-    for(int i = 2; i <= a; i = i + 2){
+    for(int i = 2; i <= a; i = i + 2)
+    {
         if(number < 0){
              numbStr+=-i + " ";
         } else {
