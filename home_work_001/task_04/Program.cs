@@ -5,7 +5,7 @@
 
  Console.Clear();
  Console.WriteLine("Введите число");
- int number = int.Parse(Console.ReadLine());
+ int number = int.Parse(Console.ReadLine() ?? "");
  int a = Math.Abs(number);
 
  string numbStr = "";

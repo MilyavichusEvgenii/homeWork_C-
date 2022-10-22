@@ -5,11 +5,11 @@
 22 3 9 -> 22*/
 
 Console.WriteLine("Введите первое число");
-int a = int.Parse(Console.ReadLine());
+int a = int.Parse(Console.ReadLine() ?? "");
 Console.WriteLine("Введите второе число");
 int b = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите третье число");
-int c = int.Parse(Console.ReadLine());
+int c = int.Parse(Console.ReadLine() ?? "");
 int max = a;
 for(int i =0; i < 2; i++){
     if(b > max){
