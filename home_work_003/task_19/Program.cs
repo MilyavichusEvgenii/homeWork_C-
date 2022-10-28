@@ -9,7 +9,7 @@ int GetNumber(string massage)
         Console.WriteLine(massage);
         
 
-        if(int.TryParse(Console.ReadLine(), out int number) && number >= 10000 ||  number <= -10000){
+        if(int.TryParse(Console.ReadLine(), out int number) && number >= 10000 &&  number < 100000 || number <= -10000 && number > -100000){
             result = number;
             break;
         } else {
