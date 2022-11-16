@@ -12,7 +12,7 @@ string GetMassage(string massage)
 while (true)
 {
     Console.WriteLine(massage);
-    string text = Console.ReadLine();
+    string text = Console.ReadLine() ?? "";
     if(text.Length > 8 || text.Length < 8){
         Console.WriteLine("Вы ввели некорректное количество цифр");
     
