@@ -29,11 +29,17 @@ double[,] ArrDoubRend(int lines, int columns)
 {
     double[,] array = new double[lines,columns];
     Random rnd = new Random();
+    int a;
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            array[i, j] = Math.Round(rnd.NextDouble() * 10, 2) * rnd.Next(-1, 2);
+            a = rnd.Next(-1, 2);
+            if(a == -1|| a == 1){
+            array[i, j] = Math.Round(rnd.NextDouble() * 10, 2) * a;
+            } else {
+                array[i, j] = Math.Round(rnd.NextDouble() * 10, 2);
+            }
         }
     }
     return array;
