@@ -26,7 +26,7 @@ int[,] ArrayIntRand()
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            array[i, j] = rnd.Next(1, 11);
+            array[i, j] = rnd.Next(1, 31);
         }
     }
     return array;
@@ -63,7 +63,7 @@ void CheckNumb(int[,] array, int numb)
     }
 }
 
-int number = GetNumb("Введите искомое значение от 1 до 10");
+int number = GetNumb("Введите искомое значение от 1 до 30");
 Console.WriteLine("Массив чисел:");
 int[,] arrNumb = ArrayIntRand();
 PrintArray(arrNumb);
