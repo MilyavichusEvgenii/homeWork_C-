@@ -20,7 +20,6 @@ int GetNumber(string massage)
 
 string RecNumbStr(int a)
 {
-    string result = string.Empty;
     if(a == 1){
         return a.ToString();
     } else {
